@@ -1,0 +1,594 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    
+    min-height: 200vh;
+}
+
+
+/* header section starts */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000000;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #000000;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s;
+}
+header ul li a:hover{
+    color: blue;
+}
+
+
+header.sticky ul li a{
+    color: white;
+}
+header.sticky ul li a:hover{
+    color: blue;
+}
+header.sticky .logo{
+    color: white;
+}
+
+/* header section finish */
+
+
+/* banner section starts */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/welcome-banner.jpg);
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgb(39, 39, 118);
+    opacity: .5;
+}
+.banner h2{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 22%;
+    font-weight: bold;
+}
+.banner  p{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 24%;
+    text-align: center;
+}
+.banner .contact_us{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(16, 122, 236);
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin-left: 43%;
+    margin-top: 33%;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+}
+.banner .contact_us:hover{
+    background-color: blue;
+    transition: .5s;
+}
+
+/* banner section finish */
+
+
+
+/* serch section starts */
+.search{
+    width: 90%;
+    height: 200px;
+    background: radial-gradient(grey,white);
+    margin-left: 5%;
+    margin-top: -100px;
+    position: absolute;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px ;
+}
+.form_conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+.form_conteiner input{
+    height: 40px;
+    width: 110%;
+    background-color: rgb(244, 243, 243);
+    padding-left: 30px;
+}
+.search button{
+    margin-left: 45%;
+    margin-top: 20px;
+    height: 40px;
+    width: 10%;
+    background-color: rgb(16, 122, 236);
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.search button:hover{
+    background-color: blue;
+    border: 2px solid black;
+    transition: .5s;
+}
+
+
+
+/* serch section finish */
+
+
+/* service section starts */
+.Largest_Dealership_of_Car{
+    height: 400px;
+    width: 300px;
+    background: radial-gradient(grey,white);
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px;
+}
+.Largest_Dealership_of_Car h3{
+    text-align: center;
+    padding-top: 150px;
+}
+.Largest_Dealership_of_Car p{
+    text-align: center;
+    padding-top: 30px;
+}
+.Largest_Dealership_of_Car:hover{
+    color: blue;
+}
+
+
+.Unlimited_Repair_Warrenty{
+    height: 400px;
+    width: 300px;
+    background: radial-gradient(grey,white);
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px;
+}
+.Unlimited_Repair_Warrenty h3{
+    text-align: center;
+    padding-top: 150px;
+}
+.Unlimited_Repair_Warrenty p{
+    text-align: center;
+    padding-top: 30px;
+}
+.Unlimited_Repair_Warrenty:hover{
+    color: blue;
+}
+
+
+.Insurence_Support{
+    height: 400px;
+    width: 300px;
+    background: radial-gradient(grey,white);
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px;
+}
+.Insurence_Support h3{
+    text-align: center;
+    padding-top: 150px;
+}
+.Insurence_Support p{
+    text-align: center;
+    padding-top: 30px;
+}
+.Insurence_Support:hover{
+    color: blue;
+}
+
+
+.services_all_conteiners{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 200px;
+}
+
+
+
+
+/* service section finish */
+
+
+/* section newest cars starts */
+.container{
+    width: 90%;
+    margin: 50px auto;
+}
+.carousel{
+    /* border: 1px solid #ccc; */
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    /* border: 1px solid red; */
+    transition: all 0.3s;
+}
+.slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.controls .arrow i{
+    font-size: 50px;
+}
+.arrow.left{
+    left: 10px;
+    font-size: 30px;
+}
+.arrow.right{
+    right: 10px;
+    font-size: 30px;
+}
+
+.controls ul{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.controls ul li{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    margin: 10px;
+    background: #333;
+    cursor: pointer;
+}
+.controls ul li.selected{
+    background: transparent;
+}
+
+
+
+
+
+.slider img{
+    width: 30%;
+    margin-left: 10%;
+}
+.newest_cars h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+.newest_cars hr{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(16, 122, 236);
+    border: 1px solid rgb(16, 122, 236);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 47%;
+}
+
+
+.car{
+    margin-left: 10%;
+}
+.car h3{
+    font-size: 30px;
+}
+.car p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.car button{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: rgb(16, 122, 236);
+    border: 1px solid rgb(16, 122, 236);
+}
+.car button:hover{
+    background-color: blue;
+    transition: .5s;
+}
+
+/* section newest cars finish */
+
+
+
+
+/* section feautured cars starts */
+.feautured_cars h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+.feautured_cars hr{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(16, 122, 236);
+    border: 1px solid rgb(16, 122, 236);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 47%;
+}
+.allcars .car img{
+    border: 1px solid black;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 234px;
+}
+.allcars .car p{
+    font-size: 15px;
+    border: 1px solid black;
+    width: 234px;
+    margin-top: -5px;
+    text-align: center;
+}
+.car_conteiner{
+    margin-top: 20px;
+}
+.car_conteiner span{
+    font-size: 12px;
+}
+.car{
+    margin-left: 70px;
+}
+.allcars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;   
+}
+
+/* section feautured cars finish */
+
+
+
+/* section What Our Clients Say starts */
+.What_Our_Clients_Say h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+.What_Our_Clients_Say hr{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(16, 122, 236);
+    border: 1px solid rgb(16, 122, 236);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 47%;
+}
+
+
+
+.tomas_lili{
+    width: 25%;
+    border: 1px solid black;
+}
+.tomas_lili:hover{
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+.tomas_lili img{
+    padding-left: 140px;
+    padding-top: 50px;
+}
+.tomas_lili p{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 25px;
+}
+.tomas_lili h3{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 25px;
+}
+
+
+
+.jon_doe{
+    width: 25%;
+    border: 1px solid black;
+}
+.jon_doe:hover{
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+.jon_doe img{
+    padding-left: 140px;
+    padding-top: 50px;
+}
+.jon_doe p{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 25px;
+}
+.jon_doe h3{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 25px;
+}
+
+
+
+
+.romi_rain{
+    width: 25%;
+    border: 1px solid black;
+}
+.romi_rain:hover{
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+.romi_rain img{
+    padding-left: 140px;
+    padding-top: 50px;
+}
+.romi_rain p{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 25px;
+}
+.romi_rain h3{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 25px;
+}
+
+
+.conteiners{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+
+
+/* section What Our Clients Say finish */
+
+
+
+/* section car models starts */
+.car_models{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+
+
+/* section car models finish */
+
+
+/* footer starts */
+footer{
+    height: 300px;
+    background-color: blueviolet;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* footer finish */
+
+
+
+.to-top{
+    background: rgb(25, 0, 255);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+ 
+ 
+ }
+ .to-top.active{
+     bottom: 32px;
+     pointer-events: auto;
+     opacity: 1;
+     
+ } 
+
+
+ 
